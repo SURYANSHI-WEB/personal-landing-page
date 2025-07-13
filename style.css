@@ -1,0 +1,89 @@
+/* Minimal CSS for header alignment and padding */
+
+header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space out items left and right */
+    padding: 1.5rem 2rem; /* Add space inside header */
+    background: #fff; /* White background */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03); /* Soft shadow under header */
+}
+
+.logo {
+    font-size: 1.5rem; /* Make logo text bigger */
+    font-weight: bold; /* Make logo text bold */
+    letter-spacing: 1px; /* Add space between letters */
+}
+
+/* Hero Section */
+.hero {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    min-height: 60vh; /* Take up at least 60% of screen height */
+    text-align: center; /* Center text */
+    padding: 2rem 1rem; /* Add space inside hero section */
+}
+
+.hero h1 {
+    font-size: 2.2rem; /* Large headline text */
+    margin-bottom: 1rem; /* Space below headline */
+}
+
+.hero p {
+    font-size: 1.1rem; /* Slightly bigger paragraph text */
+    color: #555; /* Gray text color */
+}
+
+/* Footer */
+footer {
+    background: #f8f9fa; /* Light gray background */
+    padding: 1.5rem 0; /* Space above and below footer */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 0.5rem; /* Space between footer items */
+}
+
+footer .socials a {
+    color: #222; /* Dark icon color */
+    margin: 0 0.5rem; /* Space between icons */
+    font-size: 1.5rem; /* Make icons bigger */
+    transition: color 0.2s; /* Smooth color change on hover */
+    text-decoration: none; /* Remove underline from links */
+}
+
+footer .socials a:hover {
+    color: #0077b5; /* Change icon color on hover (LinkedIn blue) */
+}
+
+/* Start hidden */
+header, .hero, footer {
+    opacity: 0; /* Invisible at first */
+    transform: translateY(20px); /* Slightly moved down */
+}
+
+/* Fade-in animation using a class */
+.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to normal position */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth animation */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) { /* For screens smaller than 600px */
+    header {
+        flex-direction: column; /* Stack header items vertically */
+        padding: 1rem; /* Less padding on small screens */
+    }
+    .hero h1 {
+        font-size: 1.4rem; /* Smaller headline on mobile */
+    }
+    .hero p {
+        font-size: 1rem; /* Smaller paragraph on mobile */
+    }
+    footer {
+        padding: 1rem 0; /* Less padding in footer on mobile */
+    }
+}
