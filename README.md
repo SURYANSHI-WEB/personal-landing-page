@@ -83,6 +83,7 @@ Test the page on mobile and desktop for a seamless experience!
 ## 🎨 Screenshot
 
 ![Landing Page Screenshot](screenshot.png)
+![Live link](https://personal-landing-page-pink.vercel.app/)
 
 ---
 
