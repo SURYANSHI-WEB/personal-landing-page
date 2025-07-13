@@ -52,6 +52,20 @@ Showcasing my journey as a Full Stack developer, this site is built with pure HT
 
 ---
 
+## 💯 Learnings
+- Improved Flexbox understanding
+- Practiced Git and GitHub workflow
+- Building and structuring a landing page from scratch
+
+---
+
+## 👀 Future Improvements
+- Add animations and hover effects
+- Experiment with React for component-based structuring
+- Add multiple sections (About, Projects, Contact) to expand
+
+---
+
 ## ✨ Customization
 
 - Change your name/logo in `index.html`
